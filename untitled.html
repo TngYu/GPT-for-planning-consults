@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>介绍GPT的网站</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* 设置页面布局和样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        header {
+            background-color: #141414;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+
+        main {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #141414;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .hero-section {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            padding: 100px 0;
+            text-align: center;
+            color: #fff;
+        }
+
+        .hero-section h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .hero-section p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        .cta-button {
+            background-color: #ffd700;
+            color: #141414;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .cta-button:hover {
+            background-color: #ffcc00;
+        }
+
+        .feature-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .feature-box img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .feature-box-text {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        .feature-box-text h3 {
+            margin-bottom: 10px;
+        }
+
+        .feature-box-text p {
+            line-height: 1.6;
+        }
+
+        .accordion {
+            background-color: #f9f9f9;
+            color: #333;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            transition: background-color 0.3s;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .accordion.active,
+        .accordion:hover {
+            background-color: #ddd;
+        }
+
+        .panel {
+            padding: 0 18px;
+            display: none;
+            background-color: white;
+            overflow: hidden;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .panel.show {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>欢迎来到我们的网站</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">关于GPT</a></li>
+                <li><a href="#applications">应用领域</a></li>
+                <li><a href="#faq">常见问题</a></li>
+                <li><a href="#contact">联系我们</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero-section">
+        <div>
+            <h1>发现 GPT 的无限可能性</h1>
+            <p>利用人工智能的力量，让未来变得更加美好。</p>
+            <button class="cta-button">了解更多</button>
+        </div>
+    </section>
+
+    <main>
+        <section id="about">
+            <h2>关于GPT</h2>
+            <p>
+                GPT（Generative Pre-trained Transformer）是一种基于 Transformer 架构的预训练语言模型。它由 OpenAI 开发，旨在处理自然语言理解和生成任务。
+            </p>
+            <p>
+                GPT 模型通过大规模的文本数据进行预训练，学习到了丰富的语言知识和语义表示。在预训练完成后，可以通过微调等技术来适应特定的任务和数据集。
+            </p>
+            <p>
+                GPT 的工作原理是利用自回归生成的方式，根据上下文信息生成连续的文本序列。它可以用于文本生成、文本分类、语言翻译、对话生成等多种自然语言处理任务。
+            </p>
+            <p>
+                近年来，GPT 在各个领域取得了显著的成果，吸引了广泛的关注和应用。它不仅在学术界取得了重大突破，还在工业界和社会生活中产生了广泛的影响。
+            </p>
+        </section>
+
+        <section id="applications">
+            <h2>GPT的应用领域</h2>
+            <div class="feature-box">
+                <img src="https://via.placeholder.com/400x250" alt="自然语言生成">
+                <div class="feature-box-text">
+                    <h3>自然语言生成</h3>
+                    <p>生成文章、新闻报道、故事情节等。</p>
+                </div>
+            </div>
+            <!-- 你可以按照类似的方式添加更多的应用领域 -->
+        </section>
+
+        <section id="faq">
+            <h2>常见问题解答</h2>
+            <button class="accordion">GPT是什么？<i class="fas fa-caret-down"></i></button>
+            <div class="panel">
+                <p>GPT是Generative Pre-trained Transformer的缩写，是一种基于Transformer架构的预训练语言模型。</p>
+            </div>
+            <!-- 其他常见问题和答案 -->
+        </section>
+
+        <section id="contact">
+            <h2>联系我们</h2>
+            <p>如果您有任何疑问或反馈意见，请随时联系我们：</p>
+            <ul>
+                <li>电子邮件：contact@example.com</li>
+                <li>电话号码：123-456-7890</li>
+                <li>地址：123 Street, City, Country</li>
+            </ul>
+            <p>我们的团队将尽快与您联系，并为您提供帮助。</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>版权所有 &copy; 2024 介绍GPT的网站</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.min.js"></script>
+    <script>
+        // 添加手风琴效果
+        document.querySelectorAll('.accordion').forEach(item => {
+            item.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === 'block') {
+                    panel.style.display = 'none';
+                } else {
+                    panel.style.display = 'block';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
